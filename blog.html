@@ -1,0 +1,72 @@
+<DOCTYPE! html>
+    <html>
+
+    <head>
+        <title>Travel Blog</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="heading"><img src="./images/travel.png" class="icon_img">
+            <nav class="navBar"><a href="index.html" class="link">Home</a><a href="blog.html"
+                    class="active_link">Blog</a><a href="contact.html" class="link">Contact</a></nav>
+        </header>
+        <div class="content">
+            <div class="place_blog">
+                <h1 class="place_heading">Portugal</h1>
+                <div class="place_blog_imgs"><img
+                        src="https://www.planetware.com/photos-large/P/portugal-mosteiro-dos-jeronimos.jpg"
+                        class="blog_img">
+                    <img src="https://www.planetware.com/photos-large/P/portugal-oceanarium.jpg" class="blog_img"><img
+                        src="https://www.planetware.com/photos-large/P/portugal-palacio-nacional-de-sintra.jpg"
+                        class="blog_img"><img src="https://www.planetware.com/photos-large/P/portugal-kayaking.jpg"
+                        class="blog_img"></div>
+            </div>
+            <div class="place_blog">
+                <h1 class="place_heading">India</h1>
+                <div class="place_blog_imgs"><img
+                        src="https://www.planetware.com/photos-large/IND/india-top-attractions-taj-mahal.jpg"
+                        class="blog_img"><img
+                        src="https://www.planetware.com/photos-large/IND/india-top-attractions-varanasi.jpg"
+                        class="blog_img"><img
+                        src="https://www.planetware.com/photos-large/IND/india-top-attractions-harmandir-sahib.jpg"
+                        class="blog_img"><img
+                        src="https://www.planetware.com/photos-large/IND/india-top-attractions-jaisalmer.jpg"
+                        class="blog_img"></div>
+            </div>
+
+            <div class="subscribe_blog">
+                <form>
+                    <h1 class="place_subheading">Subscribe to our Blog!</h1>
+                    <p class="ques" >Email</p><br>
+                    <input id="email" type="email" required class="input_field" placeholder="type here..."><br>
+                    <p class="ques">Phone number</p><br>
+                    <input type="number" id="number" required class="input_field" maxlength="10" placeholder="type here..."><br>
+                    <button id="subscribe" class="submit">Subscribe</button>
+
+                </form>
+            </div>
+        </div>
+
+        <script>
+            var subscribe = document.querySelector("#subscribe")
+            var email = document.querySelector("#email")
+            var number = document.querySelector("#number")
+
+            subscribe.addEventListener('click', () => {
+                var pattern = /^[0-9]+$/;
+                if(number.value.match(pattern)){
+                    var msg = "Thank You for subscribing! You will revieve updates at " + email.value;
+                    alert(msg)
+                }
+                else{
+                    var msg = "Please enter only numeric values";
+                    alert(msg)
+                }
+            })
+
+        </script>
+    </body>
+
+    </html>

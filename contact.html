@@ -1,0 +1,46 @@
+<DOCTYPE! html>
+    <html>
+
+    <head>
+        <title>Travel Blog</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="heading"><img src="./images/travel.png" class="icon_img">
+            <nav class="navBar"><a href="index.html" class="link">Home</a><a href="blog.html" class="link">Blog</a><a
+                    href="contact.html" class="active_link">Contact</a></nav>
+        </header>
+        <div class="content">
+            <form>
+                <p class="ques">Full name</p><br>
+                <input type="text" required class="input_field" placeholder="type here..."><br>
+                <p class="ques">Email</p><br>
+                <input type="email" required class="input_field" placeholder="type here..."><br>
+                <p class="ques">Phone number</p><br>
+                <input type="number" id="number" required class="input_field" maxlength="10" minlength="10" placeholder="type here..."><br>
+                <p class="ques">Message</p><br>
+                <textarea rows="10" cols="50"></textarea><br>
+                <button id="submit" class="submit">Submit</button>
+            </form>
+        </div>
+
+        <script>
+            var number = document.querySelector("#number")
+            var submit = document.querySelector("#submit")
+            submit.addEventListener('click', () => {
+                var pattern = /^[0-9]+$/;
+                if(number.value.match(pattern))
+                {
+                alert('Your form has been submitted successfully!');
+                }
+                else
+                {
+                alert('Please input numeric characters only');
+                }
+            })
+        </script>
+    </body>
+
+    </html>
