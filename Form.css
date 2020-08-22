@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Form--Wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Form{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    width: 30%;
+    align-items: center;
+}
+
+.Form--Field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.Form--Label{
+    padding-bottom: 1rem;
+}
+
+.Form--Input,.Form--Dropdown,.Form--Date{
+    width: 20vw;
+    font-family: 'Montserrat', sans-serif;
+    height: 3vh;
+}
+
+.Form--Heading{
+    color: #6565ff;
+    font-weight: 300;
+    font-size: 3.5rem;
+    margin-bottom: 5vh;
+}
+
+.Form--Submit{
+    text-decoration: none;
+    border: 1px solid #000;
+    border-radius: 2rem;
+    padding: 0.7rem 1.4rem;
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.Form--Submit:hover{
+    color: #fff;
+    background-color: #6565ff;
+    border: none;
+}

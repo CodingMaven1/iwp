@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Form</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+    <div class="Form--Wrapper">
+        <h1 class="Form--Heading">Product Entry Form</h1>
+        <form class="Form">
+            <div class="Form--Field">
+                <label class="Form--Label" for="id">Product ID</label>
+                <input type="text" name="id" id="id" required class="Form--Input">
+            </div>
+            <div class="Form--Field">
+                <label for="name" class="Form--Label">Product Name</label>
+                <input type="text" name="name" id="name" required class="Form--Input">
+            </div>
+            <div class="Form--Field">
+                <label for="dropdown" class="Form--Label">Quatity</label>
+                <select name="dropdown" class="Form--Dropdown" id="dropdown">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+            </div>
+            <div class="Form--Field">
+                <label for="price" class="Form--Label">Prize</label>
+                <input type="text" name="price" id="price" required class="Form--Input">
+            </div>
+            <div class="Form--Field">
+                <label for="total" class="Form--Label">Total Value</label>
+                <input type="text" name="total" id="total" required class="Form--Input">
+            </div>
+            <div class="Form--Field">
+                <label for="dop" class="Form--Label">Date of Purchase</label>
+                <input type="date" name="dop" id="dop" required class="Form--Date">
+            </div>
+            <div class="Form--Field">
+                <label for="email" class="Form--Label">Email</label>
+                <input type="email" name="email" id="email" required class="Form--Input">
+            </div>
+            <div class="Form--Field">
+                <label for="num" class="Form--Label">Phone Number</label>
+                <input type="text" name="num" id="num" required class="Form--Input">
+            </div>
+            <input type="submit" class="Form--Submit" id="submit" value="Submit" >
+        </form>
+    </div>
+</body>
+<script src="Form.js"></script>
+</html>
